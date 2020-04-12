@@ -1,21 +1,21 @@
 name := "cats-circuit-breaker"
 
-version := "0.1"
+version := "1.0"
 
-scalaVersion := "2.12.8"
+scalaVersion := "2.13.1"
 
 crossScalaVersions := Seq("2.11.12", "2.12.8")
 
-organization := "com.github.ayushworks"
+organization in ThisBuild := "com.github.spread0x"
 
 publishArtifact in Test := false
 
 
 libraryDependencies ++= Seq(
-  "org.typelevel" %% "cats-core" % "1.6.0",
-  "org.typelevel" %% "cats-effect" % "1.1.0",
-  "org.scalatest" %% "scalatest" % "3.0.1",
-  "co.fs2" %% "fs2-core" % "2.0.0"
+  "org.typelevel" %% "cats-core" % "2.0.0",
+  "org.typelevel" %% "cats-effect" % "2.0.0",
+  "org.scalatest" %% "scalatest" % "3.1.1",
+  "co.fs2" %% "fs2-core" % "2.1.0"
 )
 
 homepage := Some(url("https://github.com/ayushworks/pariksha"))
